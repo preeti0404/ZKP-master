@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Helios</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="LOGO"><img src="{{ url_for('static', filename='LOGO5.png') }}" width=50 height=50
+        class="complogo"></a>
+    <nav class="navbar">
+      <a style="--i:0;" id="votingPage" href="#">Voting</a>
+      <a style="--i:1;" id="tally" href="#">Tally</a>
+      <a style="--i:2;" id="about" href="about.html">About</a>
+    </nav>
+  </header>
+  <br><br>
+  <h1 style="margin-top:100px ;"></h1>
+  <div id="main_div" style="display: block;">
+    <center>
+      <h2>Do you think ZKP is the Future?</h2>
+    </center>
+    <br><br>
+    <form autocomplete="off">
+      <label for="credentials">Enter Your Voter ID</label>
+      <input type="text" id="credentials" />
+      <label for="vote">Cast Your Vote: </label>&nbsp;&nbsp;
+      <button type="button" id="yes" value="1" style="background-color: rgb(40, 244, 22) ;">Yes</button> &nbsp;&nbsp;
+      <button type="button" id="no" value="0" style="background-color: rgb(223, 70, 28) ;">No</button>
+    </form>
+  </div>
+  <div id="bulletin" style="display: none;">
+    <h3>Bulletin Board</h3>
+    <ul id="board"></ul>
+  </div>
+
+  <div id="aboutUS" style="display: none;">
+    <center>
+      <h2>Zero Knowledge Proof-Voting</h2>
+      <br>
+      <h3 style="color: rgba(245, 9, 17, 0.886);">Course: Information Security Analysis and Audit (CSE3501)</h3>
+      <h3 style="color: rgba(245, 9, 17, 0.886);">Faculty: Prof.Ruby D</h3>
+      <br><br>
+      <h3>Team Members:</h3>
+
+      <h4>Devansh Sachinkumar Sehgal 20BCE0410</h4>
+      <h4>Pallav Jyoti Buragohain 20BCE0866</h4>
+      <h4>Rama Krishna Mohapatro 20BCE0877</h4>
+      <h4>Pranav Sehgal 20BCE0898</h4>
+      <h4>Preeti Poddar 20BCE0905</h4>
+
+
+    </center>
+  </div>
+
+  <script src="/static/helpers.js"></script>
+  <script src="/static/client.js"></script>
+</body>
+
+</html>
